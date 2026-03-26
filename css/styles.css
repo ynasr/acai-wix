@@ -500,12 +500,14 @@ a {
     background: var(--azure);
     padding: 1rem 0;
     transform: translateY(-120%);
-    transition: transform 0.35s ease;
+    transition: transform 0.35s ease, visibility 0.35s;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
   }
 
   .nav__links.open {
     transform: translateY(0);
+    visibility: visible;
   }
 
   .nav__links li {
